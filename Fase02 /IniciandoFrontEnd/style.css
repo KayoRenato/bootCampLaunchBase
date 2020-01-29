@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:400,700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+:root{
+  --color-coolBlack: #052F5F;
+  --color-bdazzledBlue: #345995;
+  --color-orangeWeb: #FFA400;
+  --color-white:#FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background: var(--color-bdazzledBlue);
+  color: white;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+header {
+  padding: 15px;
+  /* width: 100%; */
+  border-bottom: 4px solid #333333;
+  background: var(--color-coolBlack);
+  opacity: .6;
+}
+
+header div {
+  text-align: center;
+
+}
+
+header div a {
+  color: var(--color-orangeWeb);
+  font-size: 26px;
+  line-height: 40px;
+  margin: 0 20px;
+  text-decoration: none;
+  opacity: .7;
+}
+
+header div a:hover {
+  color: var(--color-white);
+  transition: 400ms;
+
+}
+
+#wrapper {
+  text-align: center;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 20px ;
+}
+
+#wrapper img {
+  border-radius: 40% 0;
+  border: 5px solid var(--color-orangeWeb);
+  margin: 20px auto;
+  height: 350px;
+}
+
+#wrapper h1 {
+  margin-top: 10px ;
+  font-size: 42px;
+  line-height: 68px;
+  font-weight: bold;
+  opacity: .9;
+  color: var(--color-orangeWeb);
+}
+
+#wrapper h2 {
+  margin: 0 auto 24px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: normal;
+  max-width: 600px;
+  opacity: .7;
+
+}
+
+#wrapper p {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal;
+  max-width: 600px;
+  margin: auto;
+
+}
+
+#wrapper a {
+  text-decoration: none;
+  color: var(--color-orangeWeb);
+}
+
+#wrapper a:hover {
+  color: white;
+  text-decoration: underline var(--color-orangeWeb);
+  transition: 400ms;
+}
+
+.footer {
+bottom: 0;
+width: 100%;
+position: fixed;
+background: var(--color-coolBlack);
+border-top: 4px solid #333333;;
+padding: 3vh;
+opacity: .6;
+text-align: center;
+}
+
+section.footer a{
+  text-decoration: none;
+  color: var(--color-orangeWeb);
+  padding: 20px;
+  
+}
+
+section.footer a:hover {
+  text-decoration: none;
+  color: var(--color-white);
+  transition: 400ms;
+  
+}
+
+
+section.footer p{
+  color: var(--color-orangeWeb);
+  padding: 10px;
+  
+}
