@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  {% block head %}
+   <title>Profile - Kayo Renato</title>
+  {% endblock %}
+
+  <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+</head>
+
+<body>
+  <header class="">
+    <div class="links">
+      <a href="/">About me</a>
+      <a href="/portfolio">Portfolio</a>
+    </div>
+  </header>
+  
+
+  {% block content %}{% endblock %}
+
+
+
+  <section class="footer">
+    <a href="https://github.com/KayoRenato" target="_blank"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+    <a href="https://www.linkedin.com/in/kayo-renato-1aa12a28/" target="_blank"><i class="fa fa-linkedin-square fa-3x"
+        aria-hidden="true"></i></a>
+    <a href="https://wa.me/5581996703931" target="_blank"><i class="fa fa-whatsapp fa-3x" aria-hidden="true"></i></a>
+    <a href="https://t.me/kayorenato" target="_blank"><i class="fa fa-telegram fa-3x" aria-hidden="true"></i></a>
+    <!-- <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i> -->
+    <p> © developed by Kayo Renato</p>
+  </section>
+</body>
+
+</html>
