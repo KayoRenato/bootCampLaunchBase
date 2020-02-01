@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "layout.njk" %}
 
 {% block head %}
 <title>About - Kayo Renato</title>
@@ -7,16 +7,26 @@
 {% block content %}
   
 <div class="profile" id="wrapper">
-  <img src="https://avatars2.githubusercontent.com/u/39072902?s=460&v=4" alt="kayoImg">
-  <h1> Kayo Renato</h1>
-  <h2>Engineer, manager and developer full-stack, developing solutions to simplify people's daily lives.</h2>
-  <p>Bachelor in Civil Engineering - <a href="https://www.ufpe.br/caa" target="_blank">UFPE</a> </p>
-  <p>Master of Business Administration in Project Managemet - <a
-      href="https://portal.fgv.br/en/education/graduate-mba" target="blank">FGV</a></p>
-  <p>Master of Science in Production Engineering (Decision Making and Risk Analyis) - <a
-      href="https://drive.google.com/open?id=1DNux7xrOkxQasVEbPEDP5QnXF9Q8j58u" target="_blank">UFPE</a></p>
-  <p>Bachelor in Information Systems - <a href="http://www.upe.br/" target="_blank">UPE</a></p>
+  <img src="{{dbAbout.avatar}}" alt="Image of {{dbAbout.name}}">
+  <h1>{{ dbAbout.name }}</h1>
+  <h2>{{ dbAbout.purpose }}</h2>
+
+  {% for item in dbAbout.qualification %}
+  <p>{{item.formation}} - <a id="{{item.degree}}">{{item.institute}}</a> </p>
+  {% endfor %}
 
 </div>
 
+    <div class="modalOverlay">
+      <div class="modal">
+        <a class="closeModal">
+          <i class="fa fa-times-circle fa-2x"></i>
+        </a>
+        <div class="modalContent">
+          <iframe src="" width="100%" height="95%"></iframe>
+        </div>
+      </div>
+    </div>
+
+<script src="/scriptAbout.js"></script>
 {% endblock %}
